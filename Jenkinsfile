@@ -22,7 +22,7 @@ pipeline {
           env.IMAGE_TAG = imageTag
 
           sh """
-            cd server
+            cd app
 
             echo "Logging into ECR..."
             aws ecr get-login-password --region $AWS_REGION | \
