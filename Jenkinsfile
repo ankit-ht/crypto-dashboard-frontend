@@ -4,7 +4,7 @@ pipeline {
   environment {
     AWS_REGION     = 'us-east-1'
     ECR_REPO       = '016311861830.dkr.ecr.us-east-1.amazonaws.com/dev/ecom-frontend'
-    GITOPS_REPO    = 'github.com/ankit-ht/gitops-e-commerce.git'   // Only domain+path, used in https://$GIT_USER:$GIT_TOKEN@...
+    GITOPS_REPO    = 'github.com/ankit-ht/gitops-e-commerce.git'  
     GITOPS_BRANCH  = 'main'
   }
 
