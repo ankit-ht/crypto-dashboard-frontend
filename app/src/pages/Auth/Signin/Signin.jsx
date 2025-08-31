@@ -56,7 +56,7 @@ const Signin = () => {
       <Center minH="100vh">
         <Card>
           <Text fontWeight="medium" textStyle="h1">
-            Welcome to Demo App
+            Welcome to Hello App
           </Text>
           <Text textStyle="p2" color="black.60" mt="4">
             Enter your credentials to access the account.
