@@ -23,7 +23,7 @@ pipeline {
                     def IMAGE_TAG = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
                     
                     // Build Docker image from server/ folder
-                    sh "docker build -t ${ECR_REPO}:${IMAGE_TAG} ./server"
+                    sh "docker build -t ${ECR_REPO}:${IMAGE_TAG} ./app"
                     
                     // Export IMAGE_TAG for later stages
                     env.IMAGE_TAG = IMAGE_TAG
